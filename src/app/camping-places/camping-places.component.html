@@ -1,0 +1,17 @@
+<div class="col-lg-6 col-md-6">
+  <div class="single_place" style="width: 30rem;">
+    <img src="assets/imgplaces/{{places.image}}" alt="" style="width: 60rem;height: 20rem">
+    <div class="hover_Text d-flex align-items-end justify-content-between">
+      <div class="hover_text_iner">
+        <a [routerLink]="['place',places.id]" class="place_btn">Discover</a>
+        <h3>{{places.name}}</h3>
+        <p>{{places.town}}</p>
+        <p>{{places.city}}</p>
+
+      </div>
+      <div class="details_icon text-right">
+        <i class="ti-share"></i>
+      </div>
+    </div>
+  </div>
+</div>

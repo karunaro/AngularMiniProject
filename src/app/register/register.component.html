@@ -1,0 +1,98 @@
+
+<body class="bg-gradient-primary">
+<div class="container">
+
+
+
+  <div class="row justify-content-center">
+    <div class="col-xl-10 col-lg-10 col-md-8">
+      <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+          <div class="row">
+
+            <div class="col-lg-8">
+              <div class="p-5">
+                <div class="text-center">
+                  <h1 class="h4 text-gray-900 mb-4">Register</h1>
+                </div>
+                <form class = "user" [formGroup]="this.userService.dataForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-user" formControlName="nom" id="nom"
+                           placeholder="Votre Nom">
+                  </div>
+                  <div class="alert alert-danger" *ngIf="this.userService.dataForm.controls['nom'].errors && this.userService.dataForm.controls['nom'].touched">
+                    <div *ngIf="this.userService.dataForm.controls['nom'].hasError('required')">
+                      the first name is required field
+                    </div>
+                    <div *ngIf="this.userService.dataForm.controls['nom'].hasError('minlength')">
+                      the first name minlength is 3
+                    </div>
+                    <div *ngIf="this.userService.dataForm.controls['nom'].hasError('pattern')">
+                      only character
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-user" id="email" formControlName="email"
+                           placeholder="Login">
+                  </div>
+                  <div class="alert alert-danger" *ngIf="this.userService.dataForm.controls['email'].errors && this.userService.dataForm.controls['email'].touched">
+                    <div *ngIf="this.userService.dataForm.controls['email'].hasError('required')">
+                      the email is required field
+                    </div>
+
+                    <div *ngIf="this.userService.dataForm.controls['email'].hasError('pattern')">
+                      email example 'test@test.test'
+                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label> </label>
+                    <input type="number" class="form-control form-control-user" id="num" formControlName="num"
+                           placeholder="num">
+                  </div>
+                  <div class="alert alert-danger" *ngIf="this.userService.dataForm.controls['num'].errors && this.userService.dataForm.controls['num'].touched">
+                    <div *ngIf="this.userService.dataForm.controls['num'].hasError('required')">
+                      phone number  is required field
+                    </div>
+
+                    <div *ngIf="this.userService.dataForm.controls['num'].hasError('minlength')">
+                      phone number minlength is 8
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="password" class="form-control form-control-user" id="password" formControlName="password"
+                             placeholder="Password">
+                    </div>
+
+                  </div>
+                  <div class="alert alert-danger" *ngIf="this.userService.dataForm.controls['password'].errors && this.userService.dataForm.controls['password'].touched">
+                    <div *ngIf="this.userService.dataForm.controls['password'].hasError('required')">
+                      password  is required field
+                    </div>
+
+                    <div *ngIf="this.userService.dataForm.controls['password'].hasError('minlength')">
+                      password minlength is 8
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-user btn-block" [disabled]="this.userService.dataForm.invalid">Register Account</button>
+                </form>
+                <hr>
+                <div class="text-center">
+                  <a class="small" routerLink="/login">Already have an account? Login!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+
+
+

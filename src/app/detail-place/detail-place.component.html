@@ -1,0 +1,38 @@
+<div class="card mb-3" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="assets/imgplaces/{{listplaces.image}}" style="width: 60rem;height: 20rem"alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      <h1 class="fw-bold">{{listplaces.name}}</h1>
+        <p class="card-text">{{listplaces.town}}  ,{{listplaces.city}}</p>
+        <p class="font-monospace">{{listplaces.description}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="bg-dark navbar-dark">
+
+</nav>
+<section  class="jumbotron text-center">
+  <h1 class="display-3">Events</h1>
+</section>
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+
+          <app-events *ngFor="let p of listevent" [event]="p" (notification2)="participate($event)" class="col-lg-4 col-md-4"></app-events>
+    </div>
+  </div>
+</section>
+<div [hidden]="!userService.isLoggedIn">
+<div class="d-grid gap-2" >
+<button class="btn btn-warning" type="button" style="margin: auto ; display: block;" (click)="changeform()"> add new event</button>
+</div>
+</div>
+<app-detail-event (eventSaveEvent)="pushEvent($event)"  *ngIf="!hideform" [id]="id" ></app-detail-event>
+
+
+

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {UserService} from './shared/user.service';
+import {FormBuilder} from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ET';
+  constructor(public userService: UserService) {
+  }
+
 }

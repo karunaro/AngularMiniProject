@@ -1,0 +1,126 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "ouedksab",
+      "city": "Nabeul",
+      "town": "klibya",
+      "description": "nice place ",
+      "image": "ouedksab.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ouedabid",
+      "city": "Nabeul",
+      "town": "takelsa",
+      "description": "nice place ",
+      "image": "ouedabid.jpg"
+    },
+    {
+      "id": 3,
+      "name": "bnimtir",
+      "city": "jandouba",
+      "town": "aindrahem",
+      "description": "nice place ",
+      "image": "bnimtir.jpg"
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$rN/0.IpB.HttuHu9rCDhxuBuPr0ef1Be8c8tejhHaspHuIHpH6WdO",
+      "id": 1
+    },
+    {
+      "email": "mednejighazouani@gmail.com",
+      "password": "$2a$10$M7zybZfF4XYzOsIV1duNy.jtmbH7afD/OZjO45ds1HsHqEif4bo6C",
+      "id": 2,
+      "nom": "Mohamed Neji Ghazouani",
+      "num": 23412
+    },
+    {
+      "email": "nagou12@hotmail.com",
+      "password": "$2a$10$l4UUqiLO8/WNkL6sOkbtbu.nuh1yWOqpKj7/EnN6j9e085r7kv3n.",
+      "id": 3,
+      "nom": "neji",
+      "num": 25913084
+    },
+    {
+      "email": "test@test.test",
+      "password": "$2a$10$6nuERn9LjoJigQN3Wjszl.GEaWY2i/KAEcMhN0nDqK50onakWOLxu",
+      "id": 4,
+      "nom": "neji",
+      "num": 21
+    },
+    {
+      "id": 5,
+      "nom": "NEJI",
+      "num": 21321321,
+      "email": "neji@test.com",
+      "password": "12345678"
+    },
+    {
+      "email": "neji@esprit.com",
+      "password": "$2a$10$9fw5VIgaBGvnK9aFcibmy.CfjDdATkwhQ6/xEZXL8yDuzRo4hoECK",
+      "id": 6,
+      "nom": "neji",
+      "num": 25913084
+    },
+    {
+      "email": "neji@neji.com",
+      "password": "$2a$10$Bv78W.YjWcNbZVzFs/2eJOSYWaIwLFAriV66B/gU8/KBuUNxo0N9G",
+      "id": 7,
+      "nom": "NEJI",
+      "num": 25913084
+    },
+    {
+      "email": "neji@homail.com",
+      "password": "$2a$10$mCzGqLkefeWeBxQgBGOm5.hjDGTKHvbJWEucInCfuWugcHtuic0Qy",
+      "id": 8,
+      "nom": "NEJI",
+      "num": 25913084
+    }
+  ],
+  "event": [
+    {
+      "members": 6,
+      "startdate": "2021-01-08",
+      "periode": 2,
+      "description": "camping",
+      "placeId": "3",
+      "userId": 4,
+      "host": "neji",
+      "id": 2
+    },
+    {
+      "members": 3,
+      "startdate": "2020-12-23",
+      "periode": 5,
+      "description": "camping",
+      "placeId": "2",
+      "userId": 4,
+      "host": "neji",
+      "id": 3
+    },
+    {
+      "members": 5,
+      "startdate": "2021-01-02",
+      "periode": 5,
+      "description": "camping",
+      "placeId": "1",
+      "userId": 4,
+      "host": "neji",
+      "id": 4
+    },
+    {
+      "members": 4,
+      "periode": 2,
+      "startdate": "2020-12-29",
+      "description": "camping",
+      "placeId": "3",
+      "userId": 7,
+      "host": "NEJI",
+      "id": 5
+    }
+  ]
+}
